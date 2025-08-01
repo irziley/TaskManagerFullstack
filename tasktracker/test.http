@@ -1,0 +1,25 @@
+### Get all tasks
+GET http://localhost:8080/tasks
+
+### Create a new task
+POST http://localhost:8080/tasks
+Content-Type: application/json
+
+{
+  "title": "Finish my Spring Boot project"
+}
+
+### GET a task by ID
+GET http://localhost:8080/tasks/1
+
+### DELETE a task by ID
+DELETE http://localhost:8080/tasks/3
+
+### Update task with ID 1
+PUT http://localhost:8080/tasks/1
+Content-Type: application/json
+
+{
+  "title": "Finish Spring Boot update feature",
+  "completed": true
+}
